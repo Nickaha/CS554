@@ -1,0 +1,14 @@
+<h1 class="titleclass">{{title}}</h1>
+<ul>
+    {{#each shows}}
+    <li>
+        {{!-- <a href="/show/{{show.id}}">{{show.name}}</a> --}}
+        <p>{{this}}</p>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/" class="another">Make another search</a>
+{{#if hasNoShow}}
+<p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+{{/if}}

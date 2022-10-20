@@ -1,0 +1,22 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "Lab5 module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Nick Guo 10440435",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "axios": "^0.24.0",
+    "bluebird": "^3.7.2",
+    "graphql": "^15.7.2",
+    "lodash": "^4.17.21",
+    "node-redis": "^0.1.7",
+    "redis": "^3.1.2",
+    "uuid": "^8.3.2"
+  }
+}

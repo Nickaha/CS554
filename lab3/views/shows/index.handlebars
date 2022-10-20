@@ -1,0 +1,27 @@
+<h1 class="titleclass">{{title}}</h1>
+<p class="description">
+    This website is using for searching shows on TVMaze. 
+    <br>You can type the show name to search it.
+</p>
+<br>
+<br>
+<form action = '/search' method = 'POST' class='new-search'>
+    <label>
+        SearchTerm:
+        <input type="text" id="searching" name="searchTerm" placeholder="Search Term" />
+    </label>
+    <br>
+    <br>
+    <button type="submit" id="submitbutton">Search Now!</button>
+</form>
+<a href="/popularsearches">check popular searches</a>
+<ul>
+    {{#each shows}}
+    <li>
+        <a href="/show/{{this.id}}">{{this.name}}</a>
+    </li>
+    {{/each}}
+</ul>
+{{#if hasNoShow}}
+<p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+{{/if}}

@@ -1,0 +1,22 @@
+{
+  "name": "lab3_nick",
+  "version": "1.0.0",
+  "description": "Lab3 module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Guo 10440435",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "flat": "^5.0.2",
+    "handlebars": "^4.7.7",
+    "node-redis": "^0.1.7",
+    "redis": "^3.1.2"
+  }
+}

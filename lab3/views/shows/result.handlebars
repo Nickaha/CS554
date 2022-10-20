@@ -1,0 +1,15 @@
+<h1 class="titleclass">{{title}}</h1>
+<a href="/popularsearches">check popular searches</a>
+<h2 class="description">Result: {{searchTerm}}</h2>
+<ul>
+    {{#each shows}}
+    <li>
+        <a href="/show/{{show.id}}">{{show.name}}</a>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/" class="another">Make another search</a>
+{{#if hasNoShow}}
+<p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+{{/if}}

@@ -1,0 +1,23 @@
+{
+  "name": "cs554lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "seed": "node ./task/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Guo 10440435",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.1.1",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2",
+    "xss": "^1.0.9"
+  }
+}
